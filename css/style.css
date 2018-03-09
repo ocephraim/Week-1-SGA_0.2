@@ -1,57 +1,74 @@
-/* main styles*/
-body {
-    margin: auto;
-    width: 70%;
-}
+/*-------------
+Home styles
+-----------------------------*/
 section, section a {
     color: #637a98;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
-h2 {
+h2, h5 {
     color: black;
 }
-
-/* class styles */
-
 .header {
     width: 80%;
     margin-top: 10%;
-    margin-bottom: 25%;
     font-size: 1.5em;
 }
 .me {
     color: black;
 }
 
-.d-block a {
+.dis-block a {
     display: block;
     margin: 0 10px 10px 0;
     text-decoration: none;
     font-size: 1em;
 }
-.nav, .social, .thirdParty, .learning {
-    width: 25%;
-    float: left;
+.dis-block a:hover {
+    text-decoration: none;
 }
-/* About Page styles*/
-nav {
-    width: 90%; 
-} 
-nav a{
-    color: #637a98;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: none;    
-}
+
+/*---------------
+ About Page styles
+ ---------------------------------*/
 #about {
-    width: 90%;
+    width: 80%;
+    margin: auto;
 }
 .home {
-    float: left;
     color: black;
     font-weight: bolder;
 }
-.navigation {
+.placement {
+    list-style: circle;
+}
+.speaking a {
+    text-decoration: none;
+    color: rgb(11, 92, 241);
+}
+.speaking a:hover {
+    text-decoration: underline;
+}
+/*---------------
+ Media Query
+ ---------------------------------*/
+@media (max-width: 758px) {
+    #about {
+        width: 100%;
+        margin: auto;
+    }
+    .navigation {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+}
+/* .time {
+    float: right;
+    position: relative;
+    list-style: none;
+} */
+/* .navigation {
     float: right;
 }
 .navigation a {
@@ -62,14 +79,14 @@ nav a{
 }
 .navigation a:active {
     text-decoration: black;
-}
-#navbar {
+} */
+/* #navbar {
     padding-top: 60px; 
-}
-#container {
+} */
+/* #container {
     padding-top: 60px;
-}
-.about {
+} */
+/* .about {
     float: left;
     max-width: 50%;
     overflow: hidden;
@@ -77,26 +94,37 @@ nav a{
 .experience {
     max-width: 50%;
     float: right;
-}
-.placement {
+}*/
+/* nav {
+    width: 90%; 
+} 
+nav a{
+    color: #637a98;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;    
+} */
+/* .nav, .social, .thirdParty, .learning {
+    width: 25%;
     float: left;
-    position: relative;
-    list-style: circle;
-}
-.time {
-    float: right;
-    position: relative;
-    list-style: none;
-}
-.speaking, .speaking div {
-    float: left;
-    max-width: 70%;
-    margin-top: 2px;
-}
-.speaking a {
-    text-decoration: none;
-    color: rgb(11, 92, 241);
-}
-.speaking a:hover {
-    text-decoration: underline;
-}
+} */
+/* body {
+    margin: auto;
+    width: 70%;
+} */
+/* @media (max-width: 758px) {
+    .experience {
+        float: none;
+        max-width:80%;
+        font-size: small;
+    }
+    .time {
+        margin-right: 40%;
+    }
+
+    .about {
+        max-width: 90%;
+    }
+    .speaking {
+        max-width: 90%;
+    }
+} */
