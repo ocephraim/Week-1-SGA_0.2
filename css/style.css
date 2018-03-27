@@ -1,18 +1,29 @@
 /*-------------
 Home styles
 -----------------------------*/
+body {
+    max-width: 80%;
+    margin: auto;
+}
+@media (max-width: 1093px) {
+    body {
+        max-width: 100%;
+        margin: 0;
+    }
+}
 section, section a {
     color: #637a98;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 h2, h5 {
     color: black;
 }
 .header {
-    width: 80%;
+    max-width: 80%;
     margin-top: 10%;
-    font-size: 1.5em;
+    font-size: 56px;
+    font-weight: 600;
 }
 .me {
     color: black;
@@ -22,7 +33,7 @@ h2, h5 {
     display: block;
     margin: 0 10px 10px 0;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 19px;
 }
 .dis-block a:hover {
     text-decoration: none;
@@ -62,6 +73,11 @@ h2, h5 {
         margin-right: 10px;
     }
     
+}
+@media (min-width: 520px) {
+    /* .navbar-nav {
+        margin-left: 20%
+    } */
 }
 /* .time {
     float: right;
